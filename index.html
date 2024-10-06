@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator</title>
+  <link rel="icon" sizes="32x32" href="assets/images/favicon-32x32.png"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div id="card">
+    <div id="input-area">
+      <div class="input-field">
+        <span class = "input_title" id="input-title">DAY</span>
+        <input class="input-text" id="input-date" placeholder="DD"/>
+        <span class="redbox" id="redbox1">this field is invalid</span>
+      </div>
+      <div class="input-field">
+        <span class = "input_title" id="input-title">MONTH</span>
+        <input class="input-text" id="input-month" placeholder="MM"/>
+        <span class = "redbox" id="redbox2">this field is invalid</span>
+      </div>
+      <div class="input-field">
+        <span class = "input_title" id="input-title">YEAR</span>
+        <input class="input-text" id= "input-year" placeholder="YYYY"/>
+        <span class="redbox" id="redbox3">this field is invalid</span>
+      </div>
+    </div>
+    <div id="button-area">
+      <div id="partition-line"></div>
+      <div id="button">
+        <img src="assets/images/icon-arrow.svg" alt="Go" id="btn-arrow"/>
+      </div>
+    </div>
+    <div id="results-area">
+      <div class="result-text-area">
+        <span class="result-text-num" id = "result-year">
+          --&nbsp;
+        </span>
+        <span class="result-text-title">
+          years
+        </span>
+      </div>
+      <div class="result-text-area" >
+        <span class="result-text-num" id="result-month">
+          --&nbsp;
+        </span>
+        <span class="result-text-title">
+          months
+        </span>
+      </div>
+      <div class="result-text-area">
+        <span class="result-text-num" id="result-date">
+          --&nbsp;
+        </span>
+        <span class="result-text-title">
+          days
+        </span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
